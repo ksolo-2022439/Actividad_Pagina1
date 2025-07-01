@@ -1,0 +1,297 @@
+/* --- General y Reseteo --- */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #15151e;
+}
+
+a {
+    text-decoration: none;
+    color: #15151e;
+}
+
+header {
+    background-color: #15151e;
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 4px solid #e10600;
+}
+
+header h1 a {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li a {
+    color: white;
+    padding: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #e10600;
+}
+
+.contenedor-tienda {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+aside.filtros {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.filtro-seccion {
+    background-color: white;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.filtro-seccion h3 {
+    margin-top: 0;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.filtro-seccion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.filtro-seccion ul li {
+    margin-bottom: 0.5rem;
+}
+
+.filtro-seccion label {
+    cursor: pointer;
+}
+
+main.contenido-principal {
+    width: 100%;
+}
+
+.cabecera-productos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.cabecera-productos select {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.producto {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.producto h3 {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.producto .precio {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #e10600;
+    margin-bottom: 1rem;
+}
+
+.producto .boton {
+    background-color: #15151e;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    display: block;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.producto .boton:hover {
+    background-color: #e10600;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://www.formula1.com/content/dam/fom-website/2018-redesign-assets/homepage/hero-fallback-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 6rem 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.boton-hero {
+    background-color: #e10600;
+    color: white;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.boton-hero:hover {
+    background-color: #ff3329;
+}
+
+
+footer {
+    background-color: #15151e;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.contenedor-home {
+    padding: 0 2rem;
+}
+
+.seccion-home {
+    max-width: 1200px;
+    margin: 3rem auto;
+}
+
+.seccion-home h2 {
+    font-size: 1.8rem;
+    border-bottom: 2px solid #e10600;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.grid-equipos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.5rem;
+}
+
+.equipo-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.equipo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.equipo-card img {
+    max-height: 50px;
+    width: auto;
+}
+
+.grid-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.noticia-card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.noticia-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+.noticia-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.noticia-contenido {
+    padding: 1.5rem;
+}
+
+.noticia-contenido h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.noticia-contenido p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.boton-noticia {
+    display: inline-block;
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #e10600;
+}
+
+.boton-noticia:hover {
+    text-decoration: underline;
+}
