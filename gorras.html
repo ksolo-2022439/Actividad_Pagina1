@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gorras - Kinal F1 Caps</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/icon.svg" type="svg">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Kinal F1 Caps</a></h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="gorras.html">Gorras</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor-tienda">
+        <aside class="filtros">
+            <div class="filtro-seccion" data-filtro="equipo">
+                <h3>Equipos</h3>
+                <ul>
+                    <li><input type="checkbox" id="redbull"><label for="redbull"> Red Bull Racing</label></li>
+                    <li><input type="checkbox" id="ferrari"><label for="ferrari"> Scuderia Ferrari</label></li>
+                    <li><input type="checkbox" id="mercedes"><label for="mercedes"> Mercedes-AMG Petronas</label></li>
+                    <li><input type="checkbox" id="mclaren"><label for="mclaren"> McLaren F1 Team</label></li>
+                    <li><input type="checkbox" id="astonmartin"><label for="astonmartin"> Aston Martin</label></li>
+                    <li><input type="checkbox" id="alpine"><label for="alpine"> Alpine</label></li>
+                    <li><input type="checkbox" id="williams"><label for="williams"> Williams Racing</label></li>
+                    <li><input type="checkbox" id="racingbulls"><label for="racingbulls"> Racing Bulls</label></li>
+                    <li><input type="checkbox" id="sauber"><label for="sauber"> Sauber</label></li>
+                    <li><input type="checkbox" id="haas"><label for="haas"> Haas F1 Team</label></li>
+                </ul>
+            </div>
+            <div class="filtro-seccion" data-filtro="piloto">
+                <h3>Pilotos</h3>
+                <ul>
+                     <li><input type="checkbox" id="verstappen"><label for="verstappen"> Max Verstappen</label></li>
+                    <li><input type="checkbox" id="tsunoda"><label for="tsunoda"> Yuki Tsunoda</label></li>
+                    <li><input type="checkbox" id="leclerc"><label for="leclerc"> Charles Leclerc</label></li>
+                    <li><input type="checkbox" id="hamilton"><label for="hamilton"> Lewis Hamilton</label></li>
+                    <li><input type="checkbox" id="russell"><label for="russell"> George Russell</label></li>
+                    <li><input type="checkbox" id="antonelli"><label for="antonelli"> Kimi Antonelli</label></li>
+                    <li><input type="checkbox" id="norris"><label for="norris"> Lando Norris</label></li>
+                    <li><input type="checkbox" id="piastri"><label for="piastri"> Oscar Piastri</label></li>
+                    <li><input type="checkbox" id="alonso"><label for="alonso"> Fernando Alonso</label></li>
+                    <li><input type="checkbox" id="stroll"><label for="stroll"> Lance Stroll</label></li>
+                    <li><input type="checkbox" id="gasly"><label for="gasly"> Pierre Gasly</label></li>
+                    <li><input type="checkbox" id="colapinto"><label for="colapinto"> Franco Colapinto</label></li>
+                    <li><input type="checkbox" id="albon"><label for="albon"> Alex Albon</label></li>
+                    <li><input type="checkbox" id="sainz"><label for="sainz"> Carlos Sainz</label></li>
+                    <li><input type="checkbox" id="hadjar"><label for="hadjar"> Isack Hadjar</label></li>
+                    <li><input type="checkbox" id="lawson"><label for="lawson"> Liam Lawson</label></li>
+                    <li><input type="checkbox" id="hulkenberg"><label for="hulkenberg"> Nico Hülkenberg</label></li>
+                    <li><input type="checkbox" id="bortoleto"><label for="bortoleto"> Gabriel Bortoleto</label></li>
+                    <li><input type="checkbox" id="bearman"><label for="bearman"> Oliver Bearman</label></li>
+                    <li><input type="checkbox" id="ocon"><label for="ocon"> Esteban Ocon</label></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="contenido-principal">
+            <div class="cabecera-productos">
+                 <h2>Gorras disponibles</h2>
+            </div>
+
+            <div class="grid-productos">
+                <!-- Red Bull -->
+                <div class="producto" data-equipo="redbull" data-piloto="verstappen"><img src="imagenes/ver.avif" alt="Gorra de Max Verstappen"><h3>Gorra Max Verstappen - Red Bull</h3><p class="precio">55,00 $</p><a href="gorras/verstappen-redbull.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="redbull" data-piloto="tsunoda"><img src="imagenes/tsu.avif" alt="Gorra de Yuki Tsunoda"><h3>Gorra Yuki Tsunoda - Red Bull</h3><p class="precio">49,99 $</p><a href="gorras/tsunoda-redbull.html" class="boton">Ver producto</a></div>
+                <!-- Ferrari -->
+                <div class="producto" data-equipo="ferrari" data-piloto="leclerc"><img src="imagenes/lec.avif" alt="Gorra de Charles Leclerc"><h3>Gorra Charles Leclerc - Ferrari</h3><p class="precio">55,00 $</p><a href="gorras/leclerc-ferrari.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="ferrari" data-piloto="hamilton"><img src="imagenes/ham.webp" alt="Gorra de Lewis Hamilton"><h3>Gorra Lewis Hamilton - Ferrari</h3><p class="precio">55,00 $</p><a href="gorras/hamilton-ferrari.html" class="boton">Ver producto</a></div>
+                <!-- Mercedes -->
+                <div class="producto" data-equipo="mercedes" data-piloto="russell"><img src="imagenes/rus.avif" alt="Gorra de George Russell"><h3>Gorra George Russell - Mercedes</h3><p class="precio">52,50 $</p><a href="gorras/russell-mercedes.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="mercedes" data-piloto="antonelli"><img src="imagenes/ant.avif" alt="Gorra de Kimi Antonelli"><h3>Gorra Kimi Antonelli - Mercedes</h3><p class="precio">49,99 $</p><a href="gorras/antonelli-mercedes.html" class="boton">Ver producto</a></div>
+                <!-- McLaren -->
+                <div class="producto" data-equipo="mclaren" data-piloto="norris"><img src="imagenes/nor.avif" alt="Gorra de Lando Norris"><h3>Gorra Lando Norris - McLaren</h3><p class="precio">52,50 $</p><a href="gorras/norris-mclaren.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="mclaren" data-piloto="piastri"><img src="imagenes/pia.avif" alt="Gorra de Oscar Piastri"><h3>Gorra Oscar Piastri - McLaren</h3><p class="precio">52,50 $</p><a href="gorras/piastri-mclaren.html" class="boton">Ver producto</a></div>
+                <!-- Aston Martin -->
+                <div class="producto" data-equipo="astonmartin" data-piloto="alonso"><img src="imagenes/alo.webp" alt="Gorra de Fernando Alonso"><h3>Gorra Fernando Alonso - Aston Martin</h3><p class="precio">52,50 $</p><a href="gorras/alonso-astonmartin.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="astonmartin" data-piloto="stroll"><img src="imagenes/str.webp" alt="Gorra de Lance Stroll"><h3>Gorra Lance Stroll - Aston Martin</h3><p class="precio">49,99 $</p><a href="gorras/stroll-astonmartin.html" class="boton">Ver producto</a></div>
+                <!-- Alpine -->
+                <div class="producto" data-equipo="alpine" data-piloto="gasly"><img src="imagenes/gas.png" alt="Gorra de Pierre Gasly"><h3>Gorra Pierre Gasly - Alpine</h3><p class="precio">48,00 $</p><a href="gorras/gasly-alpine.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="alpine" data-piloto="colapinto"><img src="imagenes/col.avif" alt="Gorra de Franco Colapinto"><h3>Gorra Franco Colapinto - Alpine</h3><p class="precio">48,00 $</p><a href="gorras/colapinto-alpine.html" class="boton">Ver producto</a></div>
+                <!-- Williams -->
+                <div class="producto" data-equipo="williams" data-piloto="albon"><img src="imagenes/alb.avif" alt="Gorra de Alex Albon"><h3>Gorra Alex Albon - Williams</h3><p class="precio">48,00 $</p><a href="gorras/albon-williams.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="williams" data-piloto="sainz"><img src="imagenes/sai.avif" alt="Gorra de Carlos Sainz"><h3>Gorra Carlos Sainz - Williams</h3><p class="precio">55,00 $</p><a href="gorras/sainz-williams.html" class="boton">Ver producto</a></div>
+                <!-- Racing Bulls -->
+                <div class="producto" data-equipo="racingbulls" data-piloto="hadjar"><img src="imagenes/had.png" alt="Gorra de Isack Hadjar"><h3>Gorra Isack Hadjar - Racing Bulls</h3><p class="precio">48,00 $</p><a href="gorras/hadjar-racingbulls.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="racingbulls" data-piloto="lawson"><img src="imagenes/law.avif" alt="Gorra de Liam Lawson"><h3>Gorra Liam Lawson - Racing Bulls</h3><p class="precio">52,00 $</p><a href="gorras/lawson-racingbulls.html" class="boton">Ver producto</a></div>
+                <!-- Sauber -->
+                <div class="producto" data-equipo="sauber" data-piloto="hulkenberg"><img src="imagenes/hul.avif" alt="Gorra de Nico Hülkenberg"><h3>Gorra Nico Hülkenberg - Sauber</h3><p class="precio">49,99 $</p><a href="gorras/hulkenberg-sauber.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="sauber" data-piloto="bortoleto"><img src="imagenes/bor.avif" alt="Gorra de Gabriel Bortoleto"><h3>Gorra Gabriel Bortoleto - Sauber</h3><p class="precio">48,00 $</p><a href="gorras/bortoleto-sauber.html" class="boton">Ver producto</a></div>
+                <!-- Haas -->
+                <div class="producto" data-equipo="haas" data-piloto="bearman"><img src="imagenes/bea.avif" alt="Gorra de Oliver Bearman"><h3>Gorra Oliver Bearman - Haas</h3><p class="precio">48,00 $</p><a href="gorras/bearman-haas.html" class="boton">Ver producto</a></div>
+                <div class="producto" data-equipo="haas" data-piloto="ocon"><img src="imagenes/oco.avif" alt="Gorra de Esteban Ocon"><h3>Gorra Esteban Ocon - Haas</h3><p class="precio">49,99 $</p><a href="gorras/ocon-haas.html" class="boton">Ver producto</a></div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>© 2025 - Kenneth Franklin Solórzano Canás</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
