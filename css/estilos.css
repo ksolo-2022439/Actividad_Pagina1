@@ -295,3 +295,120 @@ footer {
 .boton-noticia:hover {
     text-decoration: underline;
 }
+
+.contenedor-producto-detalle {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.imagenes-producto {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.imagen-principal img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.thumbnails {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.thumbnails img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+.thumbnails img:hover, .thumbnails img.active {
+    border-color: #e10600;
+}
+
+.info-producto {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.info-producto h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.info-producto .precio {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #e10600;
+    margin-bottom: 1.5rem;
+}
+
+.info-producto .descripcion {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.boton-comprar {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #e10600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin-bottom: 2rem;
+}
+
+.boton-comprar:hover {
+    background-color: #c70500;
+}
+
+.detalles-producto h3 {
+    font-size: 1.2rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.detalles-producto ul {
+    list-style: none;
+    padding: 0;
+    color: #444;
+}
+
+.detalles-producto li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    .contenedor-producto-detalle {
+        flex-direction: column;
+    }
+    .info-producto {
+        padding-left: 0;
+        margin-top: 2rem;
+    }
+}
