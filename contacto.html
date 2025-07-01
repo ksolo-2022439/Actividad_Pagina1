@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Tienda de Gorras de Fórmula 1</title>
+    <title>Contacto y FAQ - Kinal F1 Caps</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="imagenes/icon.svg" type="svg">
 </head>
 <body>
     <header>
-        <h1>Tienda de Gorras de Fórmula 1</h1>
+        <h1><a href="index.html">Kinal F1 Caps</a></h1>
         <nav>
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -19,25 +20,67 @@
     </header>
 
     <main>
-        <section class="formulario-contacto">
-            <h2>Contacto</h2>
-            <form>
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre">
+        <div class="contenedor-contacto">
+            <h2>Preguntas Frecuentes y Contacto</h2>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email">
+            <section class="contacto-seccion">
+                <h3>Preguntas Frecuentes (FAQ)</h3>
+                <div class="faq-item">
+                    <p class="faq-pregunta">¿Cuáles son los métodos de pago aceptados?</p>
+                    <p class="faq-respuesta">Aceptamos las principales tarjetas de crédito (Visa, MasterCard, American Express) y también pagos a través de PayPal para una mayor seguridad y comodidad.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-pregunta">¿Cuánto tiempo tarda en llegar mi pedido?</p>
+                    <p class="faq-respuesta">Los pedidos se procesan en un plazo de 1 a 2 días hábiles. El tiempo de envío estándar es de 5 a 7 días hábiles para envíos nacionales. Recibirás un correo de confirmación con un número de seguimiento una vez que tu pedido haya sido enviado.</p>
+                </div>
+                <div class="faq-item">
+                    <p class="faq-pregunta">¿Tienen una política de devoluciones?</p>
+                    <p class="faq-respuesta">Sí, ofrecemos una política de devolución de 30 días. Si no estás satisfecho con tu compra, puedes devolver el producto en su estado original para obtener un reembolso completo o un cambio. Por favor, consulta nuestra sección de política de devoluciones para más detalles.</p>
+                </div>
+                 <div class="faq-item">
+                    <p class="faq-pregunta">¿Todas las gorras son productos oficiales?</p>
+                    <p class="faq-respuesta">Absolutamente. Todas nuestras gorras son productos con licencia oficial de la Fórmula 1, los equipos y los pilotos. Trabajamos directamente con los distribuidores autorizados para garantizar la autenticidad y la más alta calidad.</p>
+                </div>
+            </section>
 
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje"></textarea>
+            <section class="contacto-seccion">
+                <h3>Información de Contacto</h3>
+                <div class="info-contacto">
+                    <p><strong>Atención al Cliente:</strong></p>
+                    <p>Para preguntas sobre tu pedido, devoluciones o información sobre productos, por favor, envíanos un correo electrónico. Nuestro equipo se esfuerza por responder en menos de 24 horas.</p>
+                    <p><strong>Email:</strong> <a href="mailto:soporte@kinalf1caps.com">soporte@kinalf1caps.com</a></p>
+                </div>
+                <div class="info-contacto">
+                    <p><strong>Consultas Generales y Prensa:</strong></p>
+                    <p>Para colaboraciones, oportunidades de prensa u otras consultas generales, contacta con nuestro equipo de relaciones públicas.</p>
+                    <p><strong>Email:</strong> <a href="mailto:media@kinalf1caps.com">media@kinalf1caps.com</a></p>
+                </div>
+            </section>
+            
+            <section class="contacto-seccion">
+                <h3>Envíanos un Mensaje</h3>
+                <form class="formulario-contacto">
+                    <div class="form-grupo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="email">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="boton">Enviar</button>
+                </form>
+            </section>
 
-                <input type="submit" value="Enviar" class="boton">
-            </form>
-        </section>
+        </div>
     </main>
 
     <footer>
-        <p>© 2025 Tienda de Gorras de Fórmula 1</p>
+        <p>© 2025 - Kenneth Franklin Solórzano Canás</p>
     </footer>
 </body>
 </html>
